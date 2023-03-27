@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">131647123287-26ltlj6v6m2basjgrs89cl21jsbalnu7.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://health-app-99603-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">131647123287</string>
+    <string name="google_api_key" translatable="false">AIzaSyCv28h-Zp2q-bw1AhiPT0-rtVvM-9LBFQI</string>
+    <string name="google_app_id" translatable="false">1:131647123287:android:d9d8893b246e5f78d89812</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCv28h-Zp2q-bw1AhiPT0-rtVvM-9LBFQI</string>
+    <string name="google_storage_bucket" translatable="false">health-app-99603.appspot.com</string>
+    <string name="project_id" translatable="false">health-app-99603</string>
+</resources>

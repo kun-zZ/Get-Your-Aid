@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "944224884644",
+    "firebase_url": "https://getorade1-97c37-default-rtdb.firebaseio.com",
+    "project_id": "getorade1-97c37",
+    "storage_bucket": "getorade1-97c37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944224884644:android:b367138464844319d89331",
+        "android_client_info": {
+          "package_name": "com.example.flutter_authentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944224884644-uuabvbaqr1jkm5rj129udornm1al2v15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjNnMAzi-KjroYnDz-3cyxz-pCIEDfYZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944224884644-t2d2tsmvc5p1ntessmgkbgroan4r6902.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "944224884644-mn85ou0gbk6g6m8svfta8br7k1ab15lp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.souvikbiswas.flutterAuthentication"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944224884644:android:57779125bfefdcefd89331",
+        "android_client_info": {
+          "package_name": "com.example.health_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944224884644-uuabvbaqr1jkm5rj129udornm1al2v15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjNnMAzi-KjroYnDz-3cyxz-pCIEDfYZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944224884644-t2d2tsmvc5p1ntessmgkbgroan4r6902.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "944224884644-mn85ou0gbk6g6m8svfta8br7k1ab15lp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.souvikbiswas.flutterAuthentication"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
