@@ -25,6 +25,20 @@
     - Dart language
     - Frontend + Backend
 - Firebase Data Structure
+- appointments
+|───all (full history of appointments registered)
+|───
+└───pending (only future apponitments)
+|───
+|
+disease
+|───
+|
+doctors
+|───
+|
+users
+|───
     - Authentication ------> for authentication of the user
     - Database -----> for storing the data of patient and doctor
     - Storage ------> for profile images
