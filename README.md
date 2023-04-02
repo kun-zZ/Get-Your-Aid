@@ -24,7 +24,7 @@
 - Flutter
     - Dart language
     - Frontend + Backend
-- Firebase
+- Firebase Data Structure
     - Authentication ------> for authentication of the user
     - Database -----> for storing the data of patient and doctor
     - Storage ------> for profile images
