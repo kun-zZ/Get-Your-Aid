@@ -33,9 +33,6 @@ appointments
 └───pending (only future apponitments)
 |───
 |
-disease
-|───
-|
 doctors
 |───
 |
