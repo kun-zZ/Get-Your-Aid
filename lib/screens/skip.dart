@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
+import '../change_Language_Page.dart';
 import 'firebase_auth.dart';
 
 class Skip extends StatefulWidget {
@@ -42,7 +43,7 @@ class _SkipState extends State<Skip> {
         globalBackgroundColor: Colors.lightBlue[100],
         pages: getpages(),
         showNextButton: false,
-        showSkipButton: true,
+        showSkipButton: false,
         done: SizedBox(
           height: 48,
           child: Card(
@@ -61,7 +62,7 @@ class _SkipState extends State<Skip> {
             ),
           ),
         ),
-        onDone: () => _pushPage(context, const FireBaseAuth()),
+        onDone: () => _pushPage(context, const changeLanguage()),
       ),
     );
   }

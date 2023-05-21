@@ -87,6 +87,7 @@
     <item name="androidx_window_activity_scope" type="id"/>
     <item name="line1" type="id"/>
     <item name="line3" type="id"/>
+    <item name="report_drawn" type="id"/>
     <item name="tag_accessibility_actions" type="id"/>
     <item name="tag_accessibility_clickable_spans" type="id"/>
     <item name="tag_accessibility_heading" type="id"/>
@@ -109,6 +110,7 @@
     <id name="view_tree_view_model_store_owner"/>
     <integer name="google_play_services_version">12451000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="androidx_startup" translatable="false">androidx.startup</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -128,17 +130,17 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="copy_toast_msg">Link copied to clipboard</string>
-    <string name="default_web_client_id" translatable="false">131647123287-26ltlj6v6m2basjgrs89cl21jsbalnu7.apps.googleusercontent.com</string>
+    <string name="default_web_client_id" translatable="false">944224884644-uuabvbaqr1jkm5rj129udornm1al2v15.apps.googleusercontent.com</string>
     <string name="fallback_menu_item_copy_link">Copy link</string>
     <string name="fallback_menu_item_open_in_browser">Open in browser</string>
     <string name="fallback_menu_item_share_link">Share link</string>
-    <string name="firebase_database_url" translatable="false">https://health-app-99603-default-rtdb.firebaseio.com</string>
-    <string name="gcm_defaultSenderId" translatable="false">131647123287</string>
-    <string name="google_api_key" translatable="false">AIzaSyCv28h-Zp2q-bw1AhiPT0-rtVvM-9LBFQI</string>
-    <string name="google_app_id" translatable="false">1:131647123287:android:d9d8893b246e5f78d89812</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCv28h-Zp2q-bw1AhiPT0-rtVvM-9LBFQI</string>
-    <string name="google_storage_bucket" translatable="false">health-app-99603.appspot.com</string>
-    <string name="project_id" translatable="false">health-app-99603</string>
+    <string name="firebase_database_url" translatable="false">https://getorade1-97c37-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">944224884644</string>
+    <string name="google_api_key" translatable="false">AIzaSyDjNnMAzi-KjroYnDz-3cyxz-pCIEDfYZ4</string>
+    <string name="google_app_id" translatable="false">1:944224884644:android:57779125bfefdcefd89331</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDjNnMAzi-KjroYnDz-3cyxz-pCIEDfYZ4</string>
+    <string name="google_storage_bucket" translatable="false">getorade1-97c37.appspot.com</string>
+    <string name="project_id" translatable="false">getorade1-97c37</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
         <!-- Show a splash screen on the activity. Automatically removed when

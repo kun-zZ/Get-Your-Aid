@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:health_app/screens/patient/doctor_profile.dart';
 import 'package:typicons_flutter/typicons_flutter.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class SearchList extends StatefulWidget {
   final String searchKey;
 

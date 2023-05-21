@@ -194,23 +194,23 @@ class _SignInState extends State<SignIn> {
               ),
             ),
             // forget password
-            Container(
-              padding: const EdgeInsets.only(top: 15),
-              child: TextButton(
-                style: ButtonStyle(
-                    overlayColor:
-                        MaterialStateProperty.all(Colors.transparent)),
-                onPressed: () {},
-                child: Text(
-                  'Forgot Password?',
-                  style: GoogleFonts.lato(
-                    fontSize: 16,
-                    color: Colors.black54,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-            ),
+            // Container(
+            //   padding: const EdgeInsets.only(top: 15),
+            //   child: TextButton(
+            //     style: ButtonStyle(
+            //         overlayColor:
+            //             MaterialStateProperty.all(Colors.transparent)),
+            //     onPressed: () {},
+            //     child: Text(
+            //       'Forgot Password?',
+            //       style: GoogleFonts.lato(
+            //         fontSize: 16,
+            //         color: Colors.black54,
+            //         fontWeight: FontWeight.w600,
+            //       ),
+            //     ),
+            //   ),
+            // ),
 
             // dont have account
             Padding(

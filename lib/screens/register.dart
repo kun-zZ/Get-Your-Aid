@@ -6,7 +6,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:health_app/screens/sign_in.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class Register extends StatefulWidget {
   const Register({Key? key}) : super(key: key);
 
@@ -158,7 +158,7 @@ class _RegisterState extends State<Register> {
               textInputAction: TextInputAction.next,
               validator: (value) {
                 if (value!.isEmpty) {
-                  return 'Please enter the Email';
+                  return AppLocalizations.of(context)!.enteremail;
                 } else if (!emailValidate(value)) {
                   return 'Please enter correct Email';
                 }

@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:health_app/globals.dart';
 import 'package:health_app/model/update_user_details.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class UserDetails extends StatefulWidget {
   const UserDetails({Key? key}) : super(key: key);
 

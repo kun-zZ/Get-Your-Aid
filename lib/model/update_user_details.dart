@@ -3,7 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:health_app/globals.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class UpdateUserDetails extends StatefulWidget {
   final String label;
   final String field;

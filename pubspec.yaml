@@ -35,6 +35,10 @@ dependencies:
   firebase_database: ^10.0.16
   firebase_storage: ^11.0.16
   firebase_core_platform_interface: ^4.5.3
+  flutter_localizations:
+    sdk: flutter
+  provider: ^6.0.5
+
 
   flutter:
     sdk: flutter
@@ -43,16 +47,19 @@ dependencies:
   google_nav_bar: ^5.0.6
   icon: ^2.2.1
   image_picker: ^0.8.5+3
-  intl: ^0.18.0
+  #intl: ^0.18.0-nullsafety.2
   introduction_screen: ^3.0.2
   shared_preferences: ^2.0.15
   tabler_icons: ^2.5.0+1
   typicons_flutter: ^0.5.0
   url_launcher: ^6.1.0
+  #intl_utils: ^2.8.2
+  get: ^4.6.5
 
 dev_dependencies:
   flutter_launcher_icons: ^0.12.0
   flutter_lints: ^2.0.0
+  #intl: ^0.18.0-nullsafety.2
   flutter_test:
     sdk: flutter
 
@@ -61,10 +68,15 @@ flutter_icons:
   ios: true
   image_path: "assets/icon/appicon.png"
 
+flutter_localizations:
+  sdk: flutter
+  shared_preferences: 2.0.13
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.
 flutter:
+  generate: true
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -95,3 +107,5 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+#flutter_intl:
+ # enabled: true
