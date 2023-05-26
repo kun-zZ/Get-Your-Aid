@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:health_app/firestore_data/user_details.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class UserSettings extends StatefulWidget {
   const UserSettings({Key? key}) : super(key: key);
 
@@ -48,7 +48,7 @@ class _UserSettingsState extends State<UserSettings> {
           ),
         ),
         title: Text(
-          'User Settings',
+          AppLocalizations.of(context)!.usersetting,
           style: GoogleFonts.lato(
               color: Colors.indigo, fontSize: 20, fontWeight: FontWeight.bold),
         ),
@@ -78,7 +78,7 @@ class _UserSettingsState extends State<UserSettings> {
                 },
                 style: TextButton.styleFrom(primary: Colors.grey),
                 child: Text(
-                  'Sign out',
+                  AppLocalizations.of(context)!.signout,
                   style: GoogleFonts.lato(
                     color: Colors.black,
                     fontSize: 16,

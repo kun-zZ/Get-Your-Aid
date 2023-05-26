@@ -54,7 +54,7 @@ class _FireBaseAuthState extends State<FireBaseAuth> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'HELLO',
+                      AppLocalizations.of(context)!.hello,
                       style: GoogleFonts.b612(
                           color: Colors.black,
                           fontSize: 50,
@@ -136,7 +136,7 @@ class _FireBaseAuthState extends State<FireBaseAuth> {
                                 ),
                               ),
                               child: Text(
-                                "Create an Account",
+                                AppLocalizations.of(context)!.create,
                                 style: GoogleFonts.lato(
                                   color: Colors.black,
                                   fontSize: 18.0,

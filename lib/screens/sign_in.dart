@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:health_app/globals.dart';
 import 'package:health_app/helperFunction/sharedpref_helper.dart';
 import 'package:health_app/screens/register.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
 
@@ -73,7 +73,7 @@ class _SignInState extends State<SignIn> {
             Container(
               padding: const EdgeInsets.only(bottom: 25),
               child: Text(
-                'Login',
+                AppLocalizations.of(context)!.lg,
                 style: GoogleFonts.lato(
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
@@ -98,7 +98,7 @@ class _SignInState extends State<SignIn> {
                 ),
                 filled: true,
                 fillColor: Colors.grey[350],
-                hintText: 'Email',
+                hintText: AppLocalizations.of(context)!.em,
                 hintStyle: GoogleFonts.lato(
                   color: Colors.black26,
                   fontSize: 18,
@@ -112,9 +112,9 @@ class _SignInState extends State<SignIn> {
               textInputAction: TextInputAction.next,
               validator: (value) {
                 if (value!.isEmpty) {
-                  return 'Please enter the Email';
+                  return AppLocalizations.of(context)!.enteremail;
                 } else if (!emailValidate(value)) {
-                  return 'Please enter correct Email';
+                  return AppLocalizations.of(context)!.entercem;
                 } else {
                   return null;
                 }
@@ -142,7 +142,7 @@ class _SignInState extends State<SignIn> {
                 ),
                 filled: true,
                 fillColor: Colors.grey[350],
-                hintText: 'Password',
+                hintText: AppLocalizations.of(context)!.ps,
                 hintStyle: GoogleFonts.lato(
                   color: Colors.black26,
                   fontSize: 18,
@@ -155,7 +155,7 @@ class _SignInState extends State<SignIn> {
               },
               textInputAction: TextInputAction.done,
               validator: (value) {
-                if (value!.isEmpty) return 'Please enter the Passord';
+                if (value!.isEmpty) return AppLocalizations.of(context)!.psc;
                 return null;
               },
               obscureText: true,
@@ -220,7 +220,7 @@ class _SignInState extends State<SignIn> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    "Don't have an account?",
+                    AppLocalizations.of(context)!.noacc,
                     style: GoogleFonts.lato(
                       fontSize: 15.0,
                       fontWeight: FontWeight.w700,
@@ -232,7 +232,7 @@ class _SignInState extends State<SignIn> {
                             MaterialStateProperty.all(Colors.transparent)),
                     onPressed: () => _pushPage(context, const Register()),
                     child: Text(
-                      'Signup here',
+                      AppLocalizations.of(context)!.signup,
                       style: GoogleFonts.lato(
                         fontSize: 15,
                         color: Colors.indigo[700],
@@ -263,7 +263,7 @@ class _SignInState extends State<SignIn> {
           const CircularProgressIndicator(),
           Container(
               margin: const EdgeInsets.only(left: 15),
-              child: const Text("Loading...")),
+              child: Text(AppLocalizations.of(context)!.loading)),
         ],
       ),
     );
@@ -316,12 +316,12 @@ class _SignInState extends State<SignIn> {
     } catch (e) {
       final snackBar = SnackBar(
         content: Row(
-          children: const [
+          children:  [
             Icon(
               Icons.info_outline,
               color: Colors.white,
             ),
-            Text(" There was a problem signing you in"),
+            Text(AppLocalizations.of(context)!.prob),
           ],
         ),
       );

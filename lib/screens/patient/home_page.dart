@@ -8,7 +8,7 @@ import 'package:health_app/firestore_data/top_rated_list.dart';
 import 'package:health_app/model/card_model.dart';
 import 'package:health_app/screens/explore_list.dart';
 import 'package:intl/intl.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -132,7 +132,7 @@ class _HomePageState extends State<HomePage> {
                     alignment: Alignment.centerLeft,
                     padding: const EdgeInsets.only(left: 20, bottom: 25),
                     child: Text(
-                      "Let's Find Your\nDoctor",
+                      AppLocalizations.of(context)!.finddoctor,
                       style: GoogleFonts.lato(
                         fontSize: 35,
                         fontWeight: FontWeight.bold,
@@ -154,7 +154,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         filled: true,
                         fillColor: Colors.grey[200],
-                        hintText: 'Search doctor',
+                        hintText: AppLocalizations.of(context)!.searchdoctor,
                         hintStyle: GoogleFonts.lato(
                           color: Colors.black26,
                           fontSize: 18,
@@ -200,7 +200,7 @@ class _HomePageState extends State<HomePage> {
                     padding: const EdgeInsets.only(left: 23, bottom: 10),
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      "We care for you",
+                      AppLocalizations.of(context)!.wecare,
                       textAlign: TextAlign.center,
                       style: GoogleFonts.lato(
                           color: Colors.blue[800],
@@ -216,7 +216,7 @@ class _HomePageState extends State<HomePage> {
                     padding: const EdgeInsets.only(left: 20),
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      "Specialists",
+                      AppLocalizations.of(context)!.specialist,
                       textAlign: TextAlign.center,
                       style: GoogleFonts.lato(
                           color: Colors.blue[800],
@@ -313,7 +313,7 @@ class _HomePageState extends State<HomePage> {
                     padding: const EdgeInsets.only(left: 20),
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      "Top Rated",
+                      AppLocalizations.of(context)!.toprated,
                       textAlign: TextAlign.center,
                       style: GoogleFonts.lato(
                           color: Colors.blue[800],

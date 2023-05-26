@@ -5,6 +5,7 @@ import 'package:health_app/screens/chat/chats.dart';
 import 'package:health_app/screens/my_profile.dart';
 import 'package:health_app/screens/patient/appointments.dart';
 import 'package:typicons_flutter/typicons_flutter.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class MainPageDoctor extends StatefulWidget {
   const MainPageDoctor({Key? key}) : super(key: key);
@@ -70,18 +71,18 @@ class _MainPageDoctorState extends State<MainPageDoctor> {
                   color: Colors.white,
                 ),
                 iconSize: 30,
-                tabs: const [
+                tabs: [
                   GButton(
                     icon: Icons.chat_outlined /* Typicons.group_outline */,
-                    text: 'Chats',
+                    text: AppLocalizations.of(context)!.chats,
                   ),
                   GButton(
                     icon: Typicons.calendar,
-                    text: 'All Appointments',
+                    text: AppLocalizations.of(context)!.appointments,
                   ),
                   GButton(
                     icon: Typicons.user,
-                    text: 'Profile',
+                    text: AppLocalizations.of(context)!.profile,
                   ),
                 ],
                 selectedIndex: _selectedIndex,

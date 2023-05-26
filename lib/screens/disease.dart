@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:health_app/screens/diseasedetail.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class Disease extends StatefulWidget {
   const Disease({Key? key}) : super(key: key);
 
@@ -17,7 +17,7 @@ class _DiseaseState extends State<Disease> {
         appBar: AppBar(
           backgroundColor: Colors.white,
           title: Text(
-            'Disease',
+            AppLocalizations.of(context)!.disease,
             style: GoogleFonts.lato(
               color: Colors.black,
               fontSize: 20,

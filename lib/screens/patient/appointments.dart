@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:health_app/firestore_data/appointment_list.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class Appointments extends StatefulWidget {
   const Appointments({Key? key}) : super(key: key);
 
@@ -20,7 +20,7 @@ class _AppointmentsState extends State<Appointments> {
           alignment: Alignment.center,
           padding: const EdgeInsets.symmetric(vertical: 10),
           child: Text(
-            'My Appointments',
+            AppLocalizations.of(context)!.myappo,
             style: GoogleFonts.lato(
               color: Colors.black,
               fontWeight: FontWeight.bold,

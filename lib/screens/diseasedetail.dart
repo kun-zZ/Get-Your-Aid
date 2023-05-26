@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class DiseaseDetail extends StatefulWidget {
   final String disease;
 
@@ -75,7 +75,7 @@ class _DiseaseDetailState extends State<DiseaseDetail> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'How does it spread?',
+                                  AppLocalizations.of(context)!.spread,
                                   style: GoogleFonts.lato(
                                       color: Colors.black87,
                                       fontSize: 20,
@@ -109,7 +109,7 @@ class _DiseaseDetailState extends State<DiseaseDetail> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'Symtomps',
+                                  AppLocalizations.of(context)!.symtomps,
                                   style: GoogleFonts.lato(
                                       color: Colors.black87,
                                       fontSize: 20,
@@ -143,7 +143,7 @@ class _DiseaseDetailState extends State<DiseaseDetail> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'Warning Signs - Seek medical attention',
+                                  AppLocalizations.of(context)!.warning,
                                   style: GoogleFonts.lato(
                                       color: Colors.black87,
                                       fontSize: 20,

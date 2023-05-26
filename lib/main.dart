@@ -3,7 +3,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:health_app/LanguageChangeProvider.dart';
 import 'package:health_app/globals.dart';
-import 'package:health_app/prediction_model.dart';
 import 'package:health_app/screens/doctor/main_page_doctor.dart';
 import 'package:health_app/screens/doctor_or_patient.dart';
 import 'package:health_app/screens/firebase_auth.dart';
@@ -69,10 +68,9 @@ class _MyAppState extends State<MyApp> {
             initialRoute: '/',
             routes: {
               // When navigating to the "/" route, build the FirstScreen widget.
-              '/': (context) => SymptomsScreen(),
-              // '/': (context) => user == null
-              //     ? const Skip()
-              //     : const DoctorOrPatient(),
+              '/': (context) => user == null
+                  ? const Skip()
+                  : const DoctorOrPatient(),
               '/login': (context) => const FireBaseAuth(),
               '/home': (context) =>
                   isDoctor ? const MainPageDoctor() : const MainPagePatient(),

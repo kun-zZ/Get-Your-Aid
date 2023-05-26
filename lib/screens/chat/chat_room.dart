@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 
 import 'message.dart';
 import 'message_dao.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ChatRoom extends StatefulWidget {
   final String user2Id;
@@ -136,7 +137,6 @@ class _ChatRoomState extends State<ChatRoom> {
                           keyboardType: TextInputType.text,
                           decoration: const InputDecoration(
                             border: InputBorder.none,
-                            hintText: 'Type a message',
                           ),
                         ),
                       ),

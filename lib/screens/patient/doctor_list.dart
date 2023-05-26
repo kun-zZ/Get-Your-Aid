@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:health_app/firestore_data/search_list.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class DoctorsList extends StatefulWidget {
   const DoctorsList({Key? key}) : super(key: key);
 
@@ -32,7 +32,7 @@ class _DoctorsListState extends State<DoctorsList> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: const Text('Find Doctors'),
+        title: Text(AppLocalizations.of(context)!.fdoctor),
         actions: <Widget>[
           SafeArea(
             child: Container(
@@ -50,7 +50,7 @@ class _DoctorsListState extends State<DoctorsList> {
                   ),
                   filled: true,
                   fillColor: Colors.grey[300],
-                  hintText: 'Search Doctor',
+                  hintText: AppLocalizations.of(context)!.sdoctor,
                   hintStyle: GoogleFonts.lato(
                     color: Colors.black26,
                     fontSize: 18,
@@ -120,7 +120,7 @@ class _DoctorsListState extends State<DoctorsList> {
                         });
                       },
                       child: Text(
-                        'Show All',
+                        AppLocalizations.of(context)!.showall,
                         style: GoogleFonts.lato(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,

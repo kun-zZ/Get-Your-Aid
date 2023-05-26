@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:health_app/screens/chat/chat_room.dart';
 import 'package:health_app/screens/patient/booking_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class DoctorProfile extends StatefulWidget {
   String? doctor = "P";
 
@@ -202,7 +202,7 @@ class _DoctorProfileState extends State<DoctorProfile> {
                               const Icon(Icons.access_time_rounded),
                               const SizedBox(width: 20),
                               Text(
-                                'Working Hours',
+                                AppLocalizations.of(context)!.whours,
                                 style: GoogleFonts.lato(
                                   fontSize: 16,
                                 ),
@@ -221,7 +221,7 @@ class _DoctorProfileState extends State<DoctorProfile> {
                           child: Row(
                             children: [
                               Text(
-                                'Today: ',
+                                AppLocalizations.of(context)!.today,
                                 style: GoogleFonts.lato(
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
@@ -271,7 +271,7 @@ class _DoctorProfileState extends State<DoctorProfile> {
                               );
                             },
                             child: Text(
-                              'Book an Appointment',
+                              AppLocalizations.of(context)!.bookingappointment,
                               style: GoogleFonts.lato(
                                 color: Colors.white,
                                 fontSize: 16,
@@ -281,10 +281,10 @@ class _DoctorProfileState extends State<DoctorProfile> {
                           ),
                         ),
 
-                        const SizedBox(
+                        SizedBox(
                           height: 20,
                           child: Text(
-                            'or',
+                            AppLocalizations.of(context)!.or,
                             textAlign: TextAlign.center,
                           ),
                         ),

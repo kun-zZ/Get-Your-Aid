@@ -25,7 +25,7 @@ class _changeLanguageState extends State<changeLanguage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('choose'),
+        title: Text('Choose your Language'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -40,6 +40,9 @@ class _changeLanguageState extends State<changeLanguage> {
               Navigator.pushNamed(context, '/login');
             },
             child: Text('English'),
+            style: ElevatedButton.styleFrom(
+                minimumSize: Size(100,40)
+            ),
           ),
           ElevatedButton(
             onPressed: () {
@@ -50,6 +53,9 @@ class _changeLanguageState extends State<changeLanguage> {
               Navigator.pushNamed(context, '/login');
             },
             child: Text('অসমীয়া'),
+            style: ElevatedButton.styleFrom(
+              minimumSize: Size(100,40)
+            ),
           ),
         ],
       ),

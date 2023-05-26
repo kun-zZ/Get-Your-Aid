@@ -1,4 +1,6 @@
+// import 'dart:typed_data';
 import 'dart:typed_data';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -7,7 +9,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:health_app/firestore_data/appointment_history_list.dart';
 import 'package:health_app/globals.dart';
 import 'package:image_picker/image_picker.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'setting.dart';
 
 class MyProfile extends StatefulWidget {
@@ -192,7 +194,7 @@ class _MyProfileState extends State<MyProfile> {
                           width: 10,
                         ),
                         Text(
-                          user.email ?? 'Email Not Added',
+                          user.email ?? AppLocalizations.of(context)!.emailnotadded,
                           style: GoogleFonts.lato(
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
@@ -225,7 +227,7 @@ class _MyProfileState extends State<MyProfile> {
                           width: 10,
                         ),
                         Text(
-                          phone ?? 'Not Added',
+                          phone ?? AppLocalizations.of(context)!.notadded,
                           style: GoogleFonts.lato(
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
@@ -269,7 +271,7 @@ class _MyProfileState extends State<MyProfile> {
                           width: 10,
                         ),
                         Text(
-                          'Bio',
+                          AppLocalizations.of(context)!.bio,
                           style: GoogleFonts.lato(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
@@ -283,7 +285,7 @@ class _MyProfileState extends State<MyProfile> {
                       alignment: Alignment.centerLeft,
                       padding: const EdgeInsets.only(top: 10, left: 40),
                       child: Text(
-                        bio ?? 'Not Added',
+                        bio ?? AppLocalizations.of(context)!.notadded,
                         style: GoogleFonts.lato(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
@@ -326,7 +328,7 @@ class _MyProfileState extends State<MyProfile> {
                           width: 10,
                         ),
                         Text(
-                          "Appointment History",
+                          AppLocalizations.of(context)!.ahistory,
                           style: GoogleFonts.lato(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
@@ -347,7 +349,7 @@ class _MyProfileState extends State<MyProfile> {
                                           builder: (context) =>
                                               const AppointmentHistoryList()));
                                 },
-                                child: const Text('View all'),
+                                child: Text(AppLocalizations.of(context)!.viewall),
                               ),
                             ),
                           ),
@@ -400,17 +402,17 @@ class _MyProfileState extends State<MyProfile> {
       context: context,
       builder: (BuildContext context) {
         return SimpleDialog(
-          title: const Text('Select photo'),
+          title: Text(AppLocalizations.of(context)!.selectpic),
           children: <Widget>[
             SimpleDialogOption(
-              child: const Text('From gallery'),
+              child:  Text(AppLocalizations.of(context)!.fromgallery),
               onPressed: () {
                 selectOrTakePhoto(ImageSource.gallery);
                 Navigator.pop(context);
               },
             ),
             SimpleDialogOption(
-              child: const Text('Take a photo'),
+              child: Text(AppLocalizations.of(context)!.takepic),
               onPressed: () {
                 selectOrTakePhoto(ImageSource.camera);
                 Navigator.pop(context);

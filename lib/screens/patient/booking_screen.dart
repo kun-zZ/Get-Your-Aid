@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:health_app/screens/patient/appointments.dart';
 import 'package:intl/intl.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class BookingScreen extends StatefulWidget {
   final String doctor;
   final String doctorUid;
@@ -33,7 +33,7 @@ class _BookingScreenState extends State<BookingScreen> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   DateTime selectedDate = DateTime.now();
   TimeOfDay currentTime = TimeOfDay.now();
-  String timeText = 'Select Time';
+  String timeText = "Select Time";
   late String dateUTC;
   late String dateTime;
 
@@ -89,7 +89,7 @@ class _BookingScreenState extends State<BookingScreen> {
     // OK button
     Widget okButton = TextButton(
       child: Text(
-        "OK",
+        AppLocalizations.of(context)!.k,
         style: GoogleFonts.lato(fontWeight: FontWeight.bold),
       ),
       onPressed: () {
@@ -106,13 +106,13 @@ class _BookingScreenState extends State<BookingScreen> {
     // set up the AlertDialog
     AlertDialog alert = AlertDialog(
       title: Text(
-        "Done!",
+        AppLocalizations.of(context)!.done,
         style: GoogleFonts.lato(
           fontWeight: FontWeight.bold,
         ),
       ),
       content: Text(
-        "Appointment is registered.",
+        AppLocalizations.of(context)!.registered,
         style: GoogleFonts.lato(),
       ),
       actions: [
@@ -146,7 +146,7 @@ class _BookingScreenState extends State<BookingScreen> {
         backgroundColor: Colors.white,
         elevation: 0,
         title: Text(
-          'Appointment booking',
+          AppLocalizations.of(context)!.booking,
           style: GoogleFonts.lato(
             color: Colors.black,
             fontSize: 20,
@@ -187,7 +187,7 @@ class _BookingScreenState extends State<BookingScreen> {
                         alignment: Alignment.centerLeft,
                         padding: const EdgeInsets.only(left: 16),
                         child: Text(
-                          'Enter Patient Details',
+                          AppLocalizations.of(context)!.pdetails,
                           style: GoogleFonts.lato(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
@@ -205,7 +205,7 @@ class _BookingScreenState extends State<BookingScreen> {
                         focusNode: f1,
                         validator: (value) {
                           if (value!.isEmpty) {
-                            return 'Please Enter Patient Name';
+                            return AppLocalizations.of(context)!.enterpatientname;
                           }
                           return null;
                         },
@@ -221,7 +221,7 @@ class _BookingScreenState extends State<BookingScreen> {
                           ),
                           filled: true,
                           fillColor: Colors.grey[350],
-                          hintText: 'Patient Name*',
+                          hintText: AppLocalizations.of(context)!.patientname,
                           hintStyle: GoogleFonts.lato(
                             color: Colors.black26,
                             fontSize: 18,
@@ -255,7 +255,7 @@ class _BookingScreenState extends State<BookingScreen> {
                           ),
                           filled: true,
                           fillColor: Colors.grey[350],
-                          hintText: 'Mobile*',
+                          hintText: AppLocalizations.of(context)!.mobile,
                           hintStyle: GoogleFonts.lato(
                             color: Colors.black26,
                             fontSize: 18,
@@ -264,9 +264,9 @@ class _BookingScreenState extends State<BookingScreen> {
                         ),
                         validator: (value) {
                           if (value!.isEmpty) {
-                            return 'Please Enter Phone number';
+                            return AppLocalizations.of(context)!.enterphno;
                           } else if (value.length < 10) {
-                            return 'Please Enter correct Phone number';
+                            return AppLocalizations.of(context)!.entercorrectno;
                           }
                           return null;
                         },
@@ -298,7 +298,7 @@ class _BookingScreenState extends State<BookingScreen> {
                           ),
                           filled: true,
                           fillColor: Colors.grey[350],
-                          hintText: 'Description',
+                          hintText: AppLocalizations.of(context)!.description,
                           hintStyle: GoogleFonts.lato(
                             color: Colors.black26,
                             fontSize: 18,
@@ -320,7 +320,7 @@ class _BookingScreenState extends State<BookingScreen> {
                         readOnly: true,
                         controller: _doctorController,
                         validator: (value) {
-                          if (value!.isEmpty) return 'Please enter Doctor name';
+                          if (value!.isEmpty) return AppLocalizations.of(context)!.enterdocname;
                           return null;
                         },
                         style: GoogleFonts.lato(
@@ -335,7 +335,7 @@ class _BookingScreenState extends State<BookingScreen> {
                           ),
                           filled: true,
                           fillColor: Colors.grey[350],
-                          hintText: 'Doctor Name*',
+                          hintText: AppLocalizations.of(context)!.docname,
                           hintStyle: GoogleFonts.lato(
                             color: Colors.black26,
                             fontSize: 18,
@@ -373,7 +373,7 @@ class _BookingScreenState extends State<BookingScreen> {
                                 ),
                                 filled: true,
                                 fillColor: Colors.grey[350],
-                                hintText: 'Select Date*',
+                                hintText: AppLocalizations.of(context)!.selectdate,
                                 hintStyle: GoogleFonts.lato(
                                   color: Colors.black26,
                                   fontSize: 18,
@@ -383,7 +383,7 @@ class _BookingScreenState extends State<BookingScreen> {
                               controller: _dateController,
                               validator: (value) {
                                 if (value!.isEmpty) {
-                                  return 'Please Enter the Date';
+                                  return AppLocalizations.of(context)!.enterdate;
                                 }
                                 return null;
                               },
@@ -450,7 +450,7 @@ class _BookingScreenState extends State<BookingScreen> {
                                 ),
                                 filled: true,
                                 fillColor: Colors.grey[350],
-                                hintText: 'Select Time*',
+                                hintText: AppLocalizations.of(context)!.selecttime,
                                 hintStyle: GoogleFonts.lato(
                                   color: Colors.black26,
                                   fontSize: 18,
@@ -460,7 +460,7 @@ class _BookingScreenState extends State<BookingScreen> {
                               controller: _timeController,
                               validator: (value) {
                                 if (value!.isEmpty) {
-                                  return 'Please Enter the Time';
+                                  return AppLocalizations.of(context)!.entertime;
                                 }
                                 return null;
                               },
@@ -523,7 +523,7 @@ class _BookingScreenState extends State<BookingScreen> {
                             }
                           },
                           child: Text(
-                            "Book Appointment",
+                            AppLocalizations.of(context)!.bookingappointment,
                             style: GoogleFonts.lato(
                               color: Colors.white,
                               fontSize: 18,
