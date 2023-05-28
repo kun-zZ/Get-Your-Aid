@@ -143,16 +143,16 @@ class AppLocalizationsAs extends AppLocalizations {
   String get mobile => 'ম’বাইল*';
 
   @override
-  String get enterphno => 'অনুগ্ৰহ কৰি Phone number লিখক';
+  String get enterphno => 'অনুগ্ৰহ কৰি ফোন নম্বৰ দিব';
 
   @override
-  String get entercorrectno => 'অনুগ্ৰহ কৰি সঠিক Phone number Enter কৰক';
+  String get entercorrectno => 'অনুগ্ৰহ কৰি শুদ্ধ ফোন নম্বৰ দিব';
 
   @override
   String get description => 'বিৱৰণ';
 
   @override
-  String get enterdocname => 'অনুগ্ৰহ কৰি Doctor name লিখক';
+  String get enterdocname => 'ডাক্তৰৰ নাম লিখক';
 
   @override
   String get docname => 'ডাক্তৰৰ নাম*';
@@ -167,7 +167,7 @@ class AppLocalizationsAs extends AppLocalizations {
   String get selecttime => 'সময় নিৰ্বাচন কৰক*';
 
   @override
-  String get entertime => 'Please Enter the Time';
+  String get entertime => 'সময় লিখক';
 
   @override
   String get lg => 'লগইন কৰক';
@@ -195,4 +195,43 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get prob => 'আপোনাক চাইন ইন কৰাত সমস্যা হৈছিল';
+
+  @override
+  String get chdis => 'ৰোগ পৰীক্ষা কৰা';
+
+  @override
+  String get sup => 'চাইন আপ কৰক';
+
+  @override
+  String get name => 'নাম';
+
+  @override
+  String get plname => 'অনুগ্ৰহ কৰি নামটো দিব';
+
+  @override
+  String get ps8 => 'পাছৱৰ্ড কমেও ৮ আখৰ হব লাগিব';
+
+  @override
+  String get plps => 'অনুগ্ৰহ কৰি পাছৱৰ্ড দিয়ক';
+
+  @override
+  String get cnf => 'পাছৱৰ্ড নিশ্চিত কৰক';
+
+  @override
+  String get psnm => 'পাছৱৰ্ড মিল নাই';
+
+  @override
+  String get dr => 'ডাক্তৰ';
+
+  @override
+  String get pt => 'ৰোগী';
+
+  @override
+  String get already => 'ইতিমধ্যে একাউণ্ট আছেনে?';
+
+  @override
+  String get err => 'আঁসোৱাহ!';
+
+  @override
+  String get emal => 'ইতিমধ্যে ইমেইল আছে';
 }

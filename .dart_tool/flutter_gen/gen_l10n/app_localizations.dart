@@ -228,7 +228,7 @@ abstract class AppLocalizations {
   /// No description provided for @finddoctor.
   ///
   /// In en, this message translates to:
-  /// **'Let\'s Find Your\nDoctor'**
+  /// **'Let\'s Find Your Doctor'**
   String get finddoctor;
 
   /// No description provided for @searchdoctor.
@@ -476,6 +476,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'There was a problem signing you in'**
   String get prob;
+
+  /// No description provided for @chdis.
+  ///
+  /// In en, this message translates to:
+  /// **'Check Disease'**
+  String get chdis;
+
+  /// No description provided for @sup.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign Up'**
+  String get sup;
+
+  /// No description provided for @name.
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get name;
+
+  /// No description provided for @plname.
+  ///
+  /// In en, this message translates to:
+  /// **'Please Enter the name'**
+  String get plname;
+
+  /// No description provided for @ps8.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must be at least 8 characters long'**
+  String get ps8;
+
+  /// No description provided for @plps.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter the password'**
+  String get plps;
+
+  /// No description provided for @cnf.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm Password'**
+  String get cnf;
+
+  /// No description provided for @psnm.
+  ///
+  /// In en, this message translates to:
+  /// **'Password not matching'**
+  String get psnm;
+
+  /// No description provided for @dr.
+  ///
+  /// In en, this message translates to:
+  /// **'Doctor'**
+  String get dr;
+
+  /// No description provided for @pt.
+  ///
+  /// In en, this message translates to:
+  /// **'Patient'**
+  String get pt;
+
+  /// No description provided for @already.
+  ///
+  /// In en, this message translates to:
+  /// **'Already have an account?'**
+  String get already;
+
+  /// No description provided for @err.
+  ///
+  /// In en, this message translates to:
+  /// **'Error!'**
+  String get err;
+
+  /// No description provided for @emal.
+  ///
+  /// In en, this message translates to:
+  /// **'Email already exists'**
+  String get emal;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

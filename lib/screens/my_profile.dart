@@ -1,6 +1,5 @@
 // import 'dart:typed_data';
 import 'dart:typed_data';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -360,8 +359,8 @@ class _MyProfileState extends State<MyProfile> {
                       height: 10,
                     ),
                     Expanded(
-                      child: Scrollbar(
-                        thumbVisibility: true,
+                      child: SingleChildScrollView(
+                        // thumbVisibility: true,
                         child: Container(
                           padding: const EdgeInsets.only(right: 15),
                           child: const AppointmentHistoryList(),

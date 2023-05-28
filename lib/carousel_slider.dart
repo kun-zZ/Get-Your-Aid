@@ -7,6 +7,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:health_app/model/banner_model.dart';
 import 'package:health_app/screens/disease.dart';
 import 'package:health_app/screens/diseasedetail.dart';
+import 'package:health_app/screens/webview_app.dart';
+import 'package:health_app/webview_model.dart';
 
 class Carouselslider extends StatelessWidget {
   const Carouselslider({Key? key}) : super(key: key);
@@ -39,7 +41,7 @@ class Carouselslider extends StatelessWidget {
                 index == 0
                     ? Navigator.push(context,
                         MaterialPageRoute(builder: (BuildContext context) {
-                        return const Disease();
+                        return const Model();
                       }))
                     : Navigator.push(context,
                         MaterialPageRoute(builder: (BuildContext context) {

@@ -11,6 +11,7 @@ import 'package:health_app/screens/patient/appointments.dart';
 import 'package:health_app/screens/patient/doctor_profile.dart';
 import 'package:health_app/screens/patient/main_page_patient.dart';
 import 'package:health_app/screens/skip.dart';
+import 'package:health_app/webview_model.dart';
 import 'package:provider/provider.dart';
 import 'firebase_options.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';

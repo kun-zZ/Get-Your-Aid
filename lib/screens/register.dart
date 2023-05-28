@@ -78,7 +78,7 @@ class _RegisterState extends State<Register> {
             Container(
               padding: const EdgeInsets.only(bottom: 50),
               child: Text(
-                'Sign up',
+                AppLocalizations.of(context)!.sup,
                 style: GoogleFonts.lato(
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
@@ -103,7 +103,7 @@ class _RegisterState extends State<Register> {
                 ),
                 filled: true,
                 fillColor: Colors.grey[350],
-                hintText: 'Name',
+                hintText: AppLocalizations.of(context)!.name,
                 hintStyle: GoogleFonts.lato(
                   color: Colors.black26,
                   fontSize: 18,
@@ -116,7 +116,7 @@ class _RegisterState extends State<Register> {
               },
               textInputAction: TextInputAction.next,
               validator: (value) {
-                if (value!.isEmpty) return 'Please enter the Name';
+                if (value!.isEmpty) return AppLocalizations.of(context)!.plname;
                 return null;
               },
             ),
@@ -142,7 +142,7 @@ class _RegisterState extends State<Register> {
                 ),
                 filled: true,
                 fillColor: Colors.grey[350],
-                hintText: 'Email',
+                hintText: AppLocalizations.of(context)!.em,
                 hintStyle: GoogleFonts.lato(
                   color: Colors.black26,
                   fontSize: 18,
@@ -160,7 +160,7 @@ class _RegisterState extends State<Register> {
                 if (value!.isEmpty) {
                   return AppLocalizations.of(context)!.enteremail;
                 } else if (!emailValidate(value)) {
-                  return 'Please enter correct Email';
+                  return AppLocalizations.of(context)!.entercem;
                 }
                 return null;
               },
@@ -187,7 +187,7 @@ class _RegisterState extends State<Register> {
                 ),
                 filled: true,
                 fillColor: Colors.grey[350],
-                hintText: 'Password',
+                hintText: AppLocalizations.of(context)!.ps,
                 hintStyle: GoogleFonts.lato(
                   color: Colors.black26,
                   fontSize: 18,
@@ -203,9 +203,9 @@ class _RegisterState extends State<Register> {
               textInputAction: TextInputAction.next,
               validator: (value) {
                 if (value!.isEmpty) {
-                  return 'Please enter the Password';
+                  return AppLocalizations.of(context)!.plps;
                 } else if (value.length < 8) {
-                  return 'Password must be at least 8 characters long';
+                  return AppLocalizations.of(context)!.ps8;
                 } else {
                   return null;
                 }
@@ -233,7 +233,7 @@ class _RegisterState extends State<Register> {
                 ),
                 filled: true,
                 fillColor: Colors.grey[350],
-                hintText: 'Confirm Password',
+                hintText: AppLocalizations.of(context)!.cnf,
                 hintStyle: GoogleFonts.lato(
                   color: Colors.black26,
                   fontSize: 18,
@@ -246,9 +246,9 @@ class _RegisterState extends State<Register> {
               textInputAction: TextInputAction.done,
               validator: (value) {
                 if (value!.isEmpty) {
-                  return 'Please enter the Password';
+                  return AppLocalizations.of(context)!.plps;
                 } else if (value.compareTo(_passwordController.text) != 0) {
-                  return 'Password not Matching';
+                  return AppLocalizations.of(context)!.psnm;
                 } else {
                   return null;
                 }
@@ -285,7 +285,7 @@ class _RegisterState extends State<Register> {
                               type == 0 ? BorderStyle.solid : BorderStyle.none,
                         )),
                     child: Text(
-                      "Doctor",
+                      AppLocalizations.of(context)!.dr,
                       style: GoogleFonts.lato(
                         color: type == 0 ? Colors.black38 : Colors.white,
                         fontSize: 18.0,
@@ -294,11 +294,11 @@ class _RegisterState extends State<Register> {
                     ),
                   ),
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 50,
                   child: Center(
                     child: Text(
-                      'or',
+                      AppLocalizations.of(context)!.or,
                       textAlign: TextAlign.center,
                     ),
                   ),
@@ -325,7 +325,7 @@ class _RegisterState extends State<Register> {
                       ),
                     ),
                     child: Text(
-                      "Patient",
+                      AppLocalizations.of(context)!.pt,
                       style: GoogleFonts.lato(
                         color: type == 1 ? Colors.black38 : Colors.white,
                         fontSize: 18.0,
@@ -359,7 +359,7 @@ class _RegisterState extends State<Register> {
                     ),
                   ),
                   child: Text(
-                    "Sign In",
+                    AppLocalizations.of(context)!.signin,
                     style: GoogleFonts.lato(
                       color: Colors.white,
                       fontSize: 18.0,
@@ -387,7 +387,7 @@ class _RegisterState extends State<Register> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    "Already have an account?",
+                    AppLocalizations.of(context)!.already,
                     style: GoogleFonts.lato(
                       fontSize: 15.0,
                       fontWeight: FontWeight.w700,
@@ -399,7 +399,7 @@ class _RegisterState extends State<Register> {
                             MaterialStateProperty.all(Colors.transparent)),
                     onPressed: () => _pushPage(context, const SignIn()),
                     child: Text(
-                      'Sign in',
+                      AppLocalizations.of(context)!.signin,
                       style: GoogleFonts.lato(
                         fontSize: 15,
                         color: Colors.indigo[700],
@@ -421,7 +421,7 @@ class _RegisterState extends State<Register> {
     // set up the button
     Widget okButton = TextButton(
       child: Text(
-        "OK",
+        AppLocalizations.of(context)!.k,
         style: GoogleFonts.lato(fontWeight: FontWeight.bold),
       ),
       onPressed: () {
@@ -433,13 +433,13 @@ class _RegisterState extends State<Register> {
     // set up the AlertDialog
     AlertDialog alert = AlertDialog(
       title: Text(
-        "Error!",
+        AppLocalizations.of(context)!.err,
         style: GoogleFonts.lato(
           fontWeight: FontWeight.bold,
         ),
       ),
       content: Text(
-        "Email already Exists",
+        AppLocalizations.of(context)!.emal,
         style: GoogleFonts.lato(),
       ),
       actions: [
@@ -463,7 +463,7 @@ class _RegisterState extends State<Register> {
           const CircularProgressIndicator(),
           Container(
               margin: const EdgeInsets.only(left: 15),
-              child: const Text("Loading...")),
+              child: Text(AppLocalizations.of(context)!.loading)),
         ],
       ),
     );

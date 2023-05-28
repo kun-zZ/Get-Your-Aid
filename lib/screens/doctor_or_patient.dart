@@ -21,9 +21,9 @@ class _DoctorOrPatientState extends State<DoctorOrPatient> {
         .doc(user!.uid)
         .get();
 
-    var basicInfo = snap.data() as Map<String, dynamic>;
+    var basicInfo = snap.data() as Map<String, dynamic>?;
 
-    isDoctor = basicInfo['type'] == 'doctor' ? true : false;
+    isDoctor = basicInfo?['type'] == 'doctor' ? true : false;
     print('isdoctor : $isDoctor');
     setState(() {
       _isLoading = false;

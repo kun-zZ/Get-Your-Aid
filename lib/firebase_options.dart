@@ -23,10 +23,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -51,13 +48,13 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyA06z2p1bwaCD-pTNbqWsiKeoUQ6lDPcbI',
-    appId: '1:944224884644:web:c8fc3dd2beb6835fd89331',
+    appId: '1:944224884644:web:c807379f16875665d89331',
     messagingSenderId: '944224884644',
     projectId: 'getorade1-97c37',
     authDomain: 'getorade1-97c37.firebaseapp.com',
     databaseURL: 'https://getorade1-97c37-default-rtdb.firebaseio.com',
     storageBucket: 'getorade1-97c37.appspot.com',
-    measurementId: 'G-1YV2DJKHPJ',
+    measurementId: 'G-ZZLYFH1HPF',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
@@ -67,5 +64,16 @@ class DefaultFirebaseOptions {
     projectId: 'getorade1-97c37',
     databaseURL: 'https://getorade1-97c37-default-rtdb.firebaseio.com',
     storageBucket: 'getorade1-97c37.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyA-MEyEDHopMBcGSztPWAwcXBob5s3p7UI',
+    appId: '1:944224884644:ios:df4ca3ee372f8245d89331',
+    messagingSenderId: '944224884644',
+    projectId: 'getorade1-97c37',
+    databaseURL: 'https://getorade1-97c37-default-rtdb.firebaseio.com',
+    storageBucket: 'getorade1-97c37.appspot.com',
+    iosClientId: '944224884644-700advm6tc49g60p1qom2rk09964bhae.apps.googleusercontent.com',
+    iosBundleId: 'com.example.healthApp',
   );
 }

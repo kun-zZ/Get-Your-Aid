@@ -32,10 +32,10 @@
               "client_type": 3
             },
             {
-              "client_id": "944224884644-mn85ou0gbk6g6m8svfta8br7k1ab15lp.apps.googleusercontent.com",
+              "client_id": "944224884644-700advm6tc49g60p1qom2rk09964bhae.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.souvikbiswas.flutterAuthentication"
+                "bundle_id": "com.example.healthApp"
               }
             }
           ]
@@ -68,10 +68,10 @@
               "client_type": 3
             },
             {
-              "client_id": "944224884644-mn85ou0gbk6g6m8svfta8br7k1ab15lp.apps.googleusercontent.com",
+              "client_id": "944224884644-700advm6tc49g60p1qom2rk09964bhae.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.souvikbiswas.flutterAuthentication"
+                "bundle_id": "com.example.healthApp"
               }
             }
           ]

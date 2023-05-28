@@ -71,7 +71,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get or => 'or';
 
   @override
-  String get finddoctor => 'Let\'s Find Your\nDoctor';
+  String get finddoctor => 'Let\'s Find Your Doctor';
 
   @override
   String get searchdoctor => 'Search doctor';
@@ -195,4 +195,43 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get prob => 'There was a problem signing you in';
+
+  @override
+  String get chdis => 'Check Disease';
+
+  @override
+  String get sup => 'Sign Up';
+
+  @override
+  String get name => 'Name';
+
+  @override
+  String get plname => 'Please Enter the name';
+
+  @override
+  String get ps8 => 'Password must be at least 8 characters long';
+
+  @override
+  String get plps => 'Please enter the password';
+
+  @override
+  String get cnf => 'Confirm Password';
+
+  @override
+  String get psnm => 'Password not matching';
+
+  @override
+  String get dr => 'Doctor';
+
+  @override
+  String get pt => 'Patient';
+
+  @override
+  String get already => 'Already have an account?';
+
+  @override
+  String get err => 'Error!';
+
+  @override
+  String get emal => 'Email already exists';
 }

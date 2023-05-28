@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:health_app/LanguageChangeProvider.dart';
 import 'package:provider/provider.dart';
+import 'screens/global_variables.dart' as globals;
 
 class changeLanguage extends StatefulWidget {
   const changeLanguage({Key? key}) : super(key: key);
@@ -11,9 +12,24 @@ class changeLanguage extends StatefulWidget {
   State<changeLanguage> createState() => _changeLanguageState();
 }
 
+// class LanguageSingleton{
+//   static final LanguageSingleton _singleton = LanguageSingleton._internal();
+//   String selectedLanguageCode = '';
+//
+//   factory LanguageSingleton() {
+//     return _singleton;
+//   }
+//
+//   LanguageSingleton._internal();
+//
+// }
+
 class _changeLanguageState extends State<changeLanguage> {
   late String _selectedLanguage;
 
+  // void _updateLanguagecode(code){
+  //   return code;
+  // }
 // List<String> _languages = ['English', 'Assamese', 'Hindi'];
 //
 //   void _onLanguageSelected(String language) {
@@ -36,6 +52,8 @@ class _changeLanguageState extends State<changeLanguage> {
               setState(() {
                 // _selectedLanguage = 'en';
                 context.read<LanguageChangeProvider>().changeLocale("en");
+                globals.selectedLanguageCode='en';
+                // _updateLanguagecode('en');
               });
               Navigator.pushNamed(context, '/login');
             },
@@ -49,6 +67,8 @@ class _changeLanguageState extends State<changeLanguage> {
               setState(() {
                 // _selectedLanguage = 'as';
                 context.read<LanguageChangeProvider>().changeLocale("as");
+                globals.selectedLanguageCode='as';
+                // _updateLanguagecode('as');
               });
               Navigator.pushNamed(context, '/login');
             },

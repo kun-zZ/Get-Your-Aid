@@ -21,7 +21,7 @@
   "today": "Today:",
   "bookingappointment": "Book an Appointment",
   "or": "or",
-  "finddoctor": "Let's Find Your\nDoctor",
+  "finddoctor": "Let's Find Your Doctor",
   "searchdoctor": "Search doctor",
   "wecare": "We care for you",
   "specialist": "Specialists",
@@ -62,5 +62,18 @@
   "noacc": "Don't have an account?",
   "signup": "Signup here",
   "loading": "Loading...",
-  "prob": "There was a problem signing you in"
+  "prob": "There was a problem signing you in",
+  "chdis": "Check Disease",
+  "sup": "Sign Up",
+  "name": "Name",
+  "plname": "Please Enter the name",
+  "ps8": "Password must be at least 8 characters long",
+  "plps": "Please enter the password",
+  "cnf": "Confirm Password",
+  "psnm": "Password not matching",
+  "dr": "Doctor",
+  "pt": "Patient",
+  "already": "Already have an account?",
+  "err": "Error!",
+  "emal": "Email already exists"
 }

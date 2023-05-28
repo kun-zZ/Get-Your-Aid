@@ -293,7 +293,7 @@ class _SignInState extends State<SignIn> {
         password: _passwordController.text,
       ))
           .user;
-      if (!user!.emailVerified) {
+      if (user!.emailVerified) {
         await user.sendEmailVerification();
       }
 
